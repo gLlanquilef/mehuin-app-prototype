@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  api-users-app:
+    container_name: api-users-app
+    image: ubuntu
+    build: .
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    ports:
+    - "8040:8040"
